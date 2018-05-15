@@ -1,0 +1,39 @@
+/*
+Theme Name: Grid Magazine Child
+Theme URI: http://example.com/twenty-fifteen-child/
+description: >-
+  Grid Magazine Child
+Author: Gerard Bauer
+Author URI: http://example.com
+Template: grid-magazine
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain: grid-magazine-child
+*/
+
+@media screen and (min-width: 40em) {
+
+  h1 {
+    font-size: 1.25em;
+    line-height: 1.05882353;
+    margin-top: 0.35294118em;
+    margin-bottom: 0.0em;
+  }
+
+  header[role="banner"] .site-title {
+	  font-size: 3.25em;
+	  line-height: 1;
+  }
+
+  .single main .entry-meta .posted-on {
+    font-size: 1.0em;
+    line-height: 1.14285714;
+    margin-bottom: 0.571428571em;
+  }
+}
+
+.entry-header {
+	margin-bottom: 0.0em;
+}
