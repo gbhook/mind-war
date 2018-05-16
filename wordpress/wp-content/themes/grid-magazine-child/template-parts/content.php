@@ -29,8 +29,12 @@ global $wp_query;
 	</header><!-- .entry-header -->
 
 	<?php if ( has_post_thumbnail() ) : ?>
-	<a class="post-thumbnail" href="<?php the_permalink(); ?>">
-		<?php
+  <?
+    $data = get_post_meta($post->ID, 'mp3-url', true);
+  ?>
+	<a class="post-thumbnail" onclick="window.player.playEpisode('<? echo $data ?>')">
+
+    <?php
 		$thumbnail_size = 'grid-mag-image-big';
 		$sizes = '(min-width: 60em) calc( (100vw - (2.5em + (100vw - 60em) / 5) * 2) * 2 / 3 - .75em ), (min-width: 40em) calc(100vw - (1.5em + (100vw - 40em) / 20) * 2), calc(100vw - 3em)';
 		if ( is_home() && is_front_page() ) {
