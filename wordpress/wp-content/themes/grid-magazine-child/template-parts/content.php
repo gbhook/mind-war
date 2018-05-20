@@ -32,7 +32,7 @@ global $wp_query;
   <?
     $data = get_post_meta($post->ID, 'mp3-url', true);
   ?>
-	<a class="post-thumbnail" onclick="window.player.playEpisode('<? echo $data ?>')">
+	<a class="post-thumbnail" onclick="window.player.playEpisode('<? echo $data ?>','post-<?php the_ID(); ?>')">
 
     <?php
 		$thumbnail_size = 'grid-mag-image-big';
