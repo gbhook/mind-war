@@ -33,32 +33,10 @@ Text Domain: grid-magazine-child
     margin-bottom: 0.571428571em;
   }
 
-  .entry-header {
-  	margin-bottom: 0.0em;
-  }
 
-  .site-main .pagination {
-    margin: -10em 0 3em ;
-  }
-
-
-  #secondary {
-    margin-top: -14em ;
-  }
 }
 
 @media screen and (max-width: 50em)  {
 
-		  .entry-header {
-  	margin-bottom: 0;
-  }
 
-  .site-main .pagination {
-    margin: 0 0 3em ;
-  }
-
-
-  #secondary {
-    margin-top: 0 ;
-  }
 }
